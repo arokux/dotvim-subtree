@@ -1,10 +1,19 @@
-# main()
+# main(int argc, const char *argv[])
 snippet main
 	int main(int argc, const char *argv[])
 	{
 		${1}
 		return 0;
 	}
+
+# main()
+snippet smain
+	int main(void)
+	{
+		${1}
+		return 0;
+	}
+
 # #include <...>
 snippet inc
 	#include <${1:stdio}.h>${2}
@@ -69,6 +78,15 @@ snippet forr
 	for (${1:i} = ${2:0}; ${3:$1 < 10}; $1${4:++}) {
 		${5:/* code */}
 	}
+# Switch
+snippet sw
+	switch (${1:i}) {
+		case ${2:1} : ${3:/* code */}; break;${4}
+	}
+
+# Case
+snippet cs
+	case ${1:value} : ${2:/* code */}; break;${3}
 # Function
 snippet fun
 	${1:void} ${2:function_name}(${3})
