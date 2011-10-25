@@ -18,4 +18,4 @@
 	set showcmd
 	set number
 "}
-map <F9> :NERDTreeToggle<CR>
+map <F12> :NERDTreeToggle<CR>
