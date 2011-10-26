@@ -19,3 +19,4 @@
 	set number
 "}
 map <F12> :NERDTreeToggle<CR>
+map <F10> \rr
