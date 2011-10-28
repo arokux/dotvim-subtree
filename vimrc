@@ -17,6 +17,12 @@
 
 	set showcmd
 	set number
+
+	"modified by alex
+	let g:snippets_dir="~/.vim/bundle/snipmate/snippets/"
+	let Tlist_Ctags_Cmd='/usr/bin/ctags'
 "}
-map <F12> :NERDTreeToggle<CR>
+
 map <F10> \rr
+map <F11> :TlistToggle<CR>
+map <F12> :NERDTreeToggle<CR>
