@@ -1,7 +1,7 @@
 "Basic settings {
-"    set expandtab
-"    set shiftwidth=4
-"    set tabstop=4
+"  set expandtab
+   set shiftwidth=3
+   set tabstop=3
 	set smartindent
 	set hlsearch
 
@@ -17,6 +17,12 @@
 
 	set showcmd
 	set number
+
+	"modified by alex
+	let g:snippets_dir="~/.vim/bundle/snipmate/snippets/"
+	let Tlist_Ctags_Cmd='/usr/bin/ctags'
 "}
-map <F12> :NERDTreeToggle<CR>
+
 map <F10> \rr
+map <F11> :TlistToggle<CR>
+map <F12> :NERDTreeToggle<CR>
