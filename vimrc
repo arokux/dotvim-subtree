@@ -43,3 +43,6 @@ set wildmenu
 map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 map <F12> :NERDTreeToggle<CR>
 map <F10> <leader>rr
+
+
+map <F4> :A
