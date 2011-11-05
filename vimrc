@@ -24,6 +24,8 @@ nmap <silent> <leader>n :silent :nohlsearch<CR>
 
 set ruler
 set scrolloff=3
+set matchtime=1
+set timeout timeoutlen=30 ttimeoutlen=10
 set backupdir=~/.vim-tmp
 set directory=~/.vim-tmp
 
@@ -35,7 +37,7 @@ inoremap <expr> <C-n> pumvisible() ? '<C-n>' : '<C-n><C-r>=pumvisible() ? "\<lt>
 inoremap <expr> <M-,> pumvisible() ? '<C-n>' : '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 "autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 "autocmd InsertLeave * if pumvisible() == 0|pclose|endif
-
+set wildmenu
 
 
 map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
