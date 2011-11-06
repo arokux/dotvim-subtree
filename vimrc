@@ -1,7 +1,7 @@
 "Basic settings {
-"    set expandtab
-"    set shiftwidth=4
-"    set tabstop=4
+	set expandtab
+    set shiftwidth=4
+  	set tabstop=4
 	set smartindent
 
 	filetype off
@@ -31,18 +31,22 @@ set directory=~/.vim-tmp
 
 "Some configuration for omnicpp complete
 set completeopt=longest,menuone
+let OmniCpp_GlobalScopeSearch = 0
 let OmniCpp_ShowPrototypeInAbbr = 1
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' : '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 inoremap <expr> <M-,> pumvisible() ? '<C-n>' : '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
-"autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-"autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 set wildmenu
 
 
 map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+"let NERDTreeMapActivateNode='z'
 map <F12> :NERDTreeToggle<CR>
+map <C-S-f> :NERDTreeFind<CR>
 map <F10> <leader>rr
 
 
 map <F4> :A
+
+let g:session_directory='~/.vim-sessions'
+let g:session_default_to_last=1
