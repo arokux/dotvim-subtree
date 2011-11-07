@@ -50,3 +50,6 @@ map <F4> :A
 
 let g:session_directory='~/.vim-sessions'
 let g:session_default_to_last=1
+
+"do not beep
+set visualbell
