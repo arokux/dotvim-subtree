@@ -25,7 +25,7 @@ nmap <silent> <leader>n :silent :nohlsearch<CR>
 set ruler
 set scrolloff=3
 set matchtime=1
-set timeout timeoutlen=30 ttimeoutlen=10
+"set timeout timeoutlen=30 ttimeoutlen=10
 set backupdir=~/.vim-tmp
 set directory=~/.vim-tmp
 
@@ -46,7 +46,9 @@ map <C-S-f> :NERDTreeFind<CR>
 map <F10> <leader>rr
 
 
-map <F4> :A
+map <F4> :w<CR>:A<CR>
+map <F2> :w<CR>
+map <F3> :w<CR>:make<CR>
 
 let g:session_directory='~/.vim-sessions'
 let g:session_default_to_last=1
