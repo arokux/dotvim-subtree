@@ -53,5 +53,9 @@ map <F3> :w<CR>:make<CR>
 let g:session_directory='~/.vim-sessions'
 let g:session_default_to_last=1
 
+if bufwinnr(1)
+    map + <C-W>+
+    map - <C-W>-
+endif
 "do not beep
 set visualbell
