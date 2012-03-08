@@ -33,9 +33,9 @@ set directory=~/.vim-tmp
 set completeopt=longest,menuone
 let OmniCpp_GlobalScopeSearch = 0
 let OmniCpp_ShowPrototypeInAbbr = 1
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-inoremap <expr> <C-n> pumvisible() ? '<C-n>' : '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
-inoremap <expr> <M-,> pumvisible() ? '<C-n>' : '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+"inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+"inoremap <expr> <C-n> pumvisible() ? '<C-n>' : '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+"inoremap <expr> <M-,> pumvisible() ? '<C-n>' : '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 set wildmenu
 
 
@@ -52,10 +52,12 @@ map <F3> :w<CR>:make<CR>
 
 let g:session_directory='~/.vim-sessions'
 let g:session_default_to_last=1
+let g:session_persist_globals = ['&makeprg']
 
 if bufwinnr(1)
     map + <C-W>+
     map - <C-W>-
 endif
+
 "do not beep
-set visualbell
+"set visualbell

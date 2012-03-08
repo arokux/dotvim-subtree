@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/roman/uni/teaching/bs_pk3/ws10/bs_pk3/private/u07/pk3/solution'
-let g:netrw_dirhist_2='/home/roman/uni/projects/va/imaging_system/ios_framework2/scripts'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/usr/share/fonts/local'
+let g:netrw_dirhist_2='/usr/share/kbd/consolefonts'
+let g:netrw_dirhist_3='/home/roman/uni/projects/va/imaging_system/ios_framework2_svn'
