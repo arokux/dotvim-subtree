@@ -39,7 +39,11 @@ let OmniCpp_ShowPrototypeInAbbr = 1
 set wildmenu
 
 
+"Global tag system (gtags)
 map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+map <C-\>^] :GtagsCursor<CR>
+
+
 "let NERDTreeMapActivateNode='z'
 map <F12> :NERDTreeToggle<CR>
 map <C-S-f> :NERDTreeFind<CR>
