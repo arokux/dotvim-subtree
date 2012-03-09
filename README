@@ -10,6 +10,7 @@ git checkout -b <name>_branch <name>_remote/master
 git checkout master
 git read-tree --prefix=bundle/<name> -u <name>_branch
 git push origin <name>_branch
+git commit -a
 
 To update a plugin:
 
